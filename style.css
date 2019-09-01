@@ -1,0 +1,138 @@
+:root{
+    --header-text-color: #f7f7f7;
+    --bg-section: #f7f7f7;
+    --section-text-color: #5d5d5d;
+    --bg-header: #a0c334;
+    --additional-color: #e5d429;
+    --font: 'Roboto', sans-serif;
+
+    /* for caption */
+    --large-size: 60px;
+    --medium-size: 40px;
+    --small-size: 20px;
+
+    /* for paragraph */
+    --standard-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--header-text-color);
+    font-family: var(--font);
+    font-size: var(--standard-size);
+    width: 100%;
+}
+header,section{
+    width: 100%;
+}
+header{
+    background: var(--bg-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h4{
+    font-size: var(--large-size)
+}
+svg{
+    width: 200px;
+}
+section{
+    padding: 30px 0;
+    color: var(--section-text-color);
+}
+h2{
+    font-size: var(--medium-size);
+}
+h5,h6{
+    font-size: var(--small-size);
+}
+h6{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    text-align: center;
+}
+
+.message__section{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+}
+
+.write__message__form, .chat__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.write__message__form{
+    text-align: left;
+    width: 25%;
+}
+
+.chat__form{
+    width: 50%;
+
+}
+.chat__form h5{
+    text-align: center;
+}
+.chat__form div{
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.light,.yellow,.green,.dark,button,textarea{
+    border-radius: 5px;
+}
+
+textarea{
+    border: 2px solid var(--section-text-color);
+    resize: none;
+    outline: none;
+    font-family: var(--font);
+    font-size: var(--standard-size);
+    color: var(--section-text-color);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button{
+    margin-left: auto;
+    width: 40%;
+    padding: 5px;
+    background: var(--bg-header);
+    color: var(--header-text-color);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .15s ease-in;
+}
+
+.light{
+    background: var(--bg-section);
+}
+.dark{
+    background: var(--section-text-color);
+    color: var(--header-text-color);
+}
+.yellow{
+    background: var(--additional-color);
+}
+.green{
+    background: var(--bg-header);
+    color: var(--header-text-color);
+}
+
+button:hover{
+    box-shadow: 2px 6px 15px 0px rgba(168,163,168,1);
+}
+
+header{
+    box-shadow: -1px 8px 15px 6px rgba(168,163,168,1);
+}

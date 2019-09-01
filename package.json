@@ -2,7 +2,7 @@
   "name": "node-chat",
   "version": "1.0.0",
   "description": "Chat on Node.js, Express and Socket.io",
-  "main": "index.js",
+  "main": "chat.js",
   "scripts": {
     "start": "nodemon chat.js"
   },
