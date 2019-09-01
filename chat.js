@@ -11,12 +11,13 @@ app.get('/', (req, res)=> res.sendFile(`${__dirname}/chat.html`));
 let connections = [];
 
 socketio.sockets.on('connection', (socket)=>{
-  console.info('connect');
+  socketio.sockets.emit('connect_user', socket.handshake.query.name);
+
   connections.push(socket);
 
   socket.on('disconnect', (data)=>{
     connections.splice(connections.indexOf(socket), 1);
-    console.error('disconnect');
+    socketio.sockets.emit('disconnect_user', socket.handshake.query.name);
   });
 
   socket.on('send', (msg)=>socketio.sockets.emit('add_msg', {msg}));
