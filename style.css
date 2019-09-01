@@ -4,6 +4,7 @@
     --section-text-color: #5d5d5d;
     --bg-header: #a0c334;
     --additional-color: #e5d429;
+    --disconnect-color: #ff5858;
     --font: 'Roboto', sans-serif;
 
     /* for caption */
@@ -52,7 +53,7 @@ h6{
     margin: 0;
     padding: 0;
 }
-.header{
+.header, .chat__form h5, .connect, .disconnect{
     text-align: center;
 }
 
@@ -78,9 +79,7 @@ h6{
     width: 50%;
 
 }
-.chat__form h5{
-    text-align: center;
-}
+
 .chat__form div{
     padding: 10px;
     margin: 20px 0;
@@ -135,4 +134,12 @@ button:hover{
 
 header{
     box-shadow: -1px 8px 15px 6px rgba(168,163,168,1);
+}
+
+.connect{
+    color: var(--bg-header);
+}
+
+.disconnect{
+    color: var(--disconnect-color);
 }
