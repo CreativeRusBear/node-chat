@@ -1,4 +1,4 @@
-# Node Chat :e-mail:
+# Node Chat (Chat.io) :e-mail:
 
 This is a chat written using technologies such as Node.js, Express, Socket.io
 
