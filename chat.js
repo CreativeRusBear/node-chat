@@ -4,11 +4,13 @@ const server = require('http').createServer(app);
 const socketio = require('socket.io').listen(server);
 
 server.listen(8000);
-
+console.info(`Server running at: 
+    http://localhost:8000
+    http://127.0.0.1:8000`);
 app.use(express.static(__dirname + '/'));
 app.get('/', (req, res)=> res.sendFile(`${__dirname}/chat.html`));
 
-let connections = [];
+const connections = [];
 
 socketio.sockets.on('connection', (socket)=>{
   socketio.sockets.emit('connect_user', socket.handshake.query.name);
