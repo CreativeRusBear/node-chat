@@ -1,4 +1,8 @@
 # Node Chat (Chat.io) :e-mail:
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CreativeRusBear/node-chat)
+![GitHub repo size](https://img.shields.io/github/repo-size/CreativeRusBear/node-chat)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/CreativeRusBear/node-chat)
+![GitHub](https://img.shields.io/github/license/CreativeRusBear/node-chat)
 
 This is a chat written using technologies such as Node.js, Express, Socket.io
 
