@@ -1,0 +1,9 @@
+:root{
+    /*for caption*/
+    --large-size: 3.75rem;
+    --medium-size: 2.5rem;
+    --small-size: 1.25rem;
+
+    /*for paragraph*/
+    --standard-size: 1rem;
+}

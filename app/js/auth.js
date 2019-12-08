@@ -6,6 +6,7 @@
 export default class Authorization {
 
 	/**
+	 * @async
 	 * @method
 	 * @description Get user's data
 	 * @return {Promise<*>} - Authorization data
@@ -27,9 +28,3 @@ export default class Authorization {
 		return text;
 	}
 }
-
-/*
- * Async function auth () {
- *
- * }
- */

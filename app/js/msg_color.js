@@ -1,7 +1,7 @@
 /**
  * @class
  * @module /app/js/msg_color
- * @description
+ * @description Pick random color theme for message
  */
 export default class ColorPicker {
 	/**

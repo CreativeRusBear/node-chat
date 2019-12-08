@@ -1,109 +1,135 @@
-:root{
-    --header-text-color: #f7f7f7;
-    --bg-section: #f7f7f7;
-    --section-text-color: #5d5d5d;
-    --bg-header: #a0c334;
-    --additional-color: #e5d429;
-    --disconnect-color: #ff5858;
-    --font: 'Roboto', sans-serif;
+@import "palette.css";
+@import "fonts.css";
+@import "font-sizes.css";
 
-    /* for caption */
-    --large-size: 60px;
-    --medium-size: 40px;
-    --small-size: 20px;
-
-    /* for paragraph */
-    --standard-size: 16px;
-}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--header-text-color);
-    font-family: var(--font);
-    font-size: var(--standard-size);
-    width: 100%;
+    font-family: var(--roboto-font);
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
+
 header,section{
     width: 100%;
 }
+
 header{
     background: var(--bg-header);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: -1px 8px 15px 6px rgba(168,163,168,1);
 }
-h4{
+
+header .header__logo{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/svg/header.svg");
+}
+header h2{
     font-size: var(--large-size)
 }
-svg{
-    width: 200px;
-}
+
 section{
-    padding: 30px 0;
+    padding: 2rem 0;
     color: var(--section-text-color);
 }
-h2{
+
+section h4{
     font-size: var(--medium-size);
 }
-h5,h6{
+
+section h5, section h6{
     font-size: var(--small-size);
 }
-h6{
+section h6{
     margin: 0;
     padding: 0;
 }
-.header, .chat__form h5, .connect, .disconnect{
+section .header, section .chat__form h5, section .connect, section .disconnect{
     text-align: center;
 }
 
-.message__section{
+section .message__section{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     width: 100%;
 }
 
-.write__message__form, .chat__form{
+section .all__messages{
+    height: 18rem;
+    overflow-y: auto;
+}
+
+section .all__messages::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: var(--bg-section);
+}
+
+section .all__messages::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: var(--bg-section);
+}
+
+section .all__messages::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--section-text-color);
+}
+
+section .write__message__form, section .chat__form{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.write__message__form{
+section .write__message__form{
     text-align: left;
-    width: 25%;
+    width: 30%;
 }
 
-.chat__form{
-    width: 50%;
+section .chat__form{
+    width: 40%;
 
 }
 
-.chat__form div{
-    padding: 10px;
-    margin: 20px 0;
+section .chat__form div{
+    padding: 0.625rem;
+    margin: 1.25rem 0;
 }
 
-.light,.yellow,.green,.dark,button,textarea{
+section .light, section .yellow,section .green, section .dark,section button,section textarea{
     border-radius: 5px;
 }
 
-textarea{
+section textarea{
     border: 2px solid var(--section-text-color);
     resize: none;
     outline: none;
-    font-family: var(--font);
+    font-family: var(--roboto-font);
     font-size: var(--standard-size);
     color: var(--section-text-color);
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
 }
 
-button{
+section button{
     margin-left: auto;
     width: 40%;
-    padding: 5px;
+    padding: 0.3125rem;
     background: var(--bg-header);
     color: var(--header-text-color);
     box-shadow: none;
@@ -113,33 +139,32 @@ button{
     transition: .15s ease-in;
 }
 
-.light{
+section .light{
     background: var(--bg-section);
 }
-.dark{
+
+section .dark{
     background: var(--section-text-color);
     color: var(--header-text-color);
 }
-.yellow{
+
+section .yellow{
     background: var(--additional-color);
 }
-.green{
+
+section .green{
     background: var(--bg-header);
     color: var(--header-text-color);
 }
 
-button:hover{
+section button:hover{
     box-shadow: 2px 6px 15px 0px rgba(168,163,168,1);
 }
 
-header{
-    box-shadow: -1px 8px 15px 6px rgba(168,163,168,1);
-}
-
-.connect{
+section .connect{
     color: var(--bg-header);
 }
 
-.disconnect{
+section .disconnect{
     color: var(--disconnect-color);
 }
