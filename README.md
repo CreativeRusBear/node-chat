@@ -3,6 +3,12 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/CreativeRusBear/node-chat)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/CreativeRusBear/node-chat)
 ![GitHub](https://img.shields.io/github/license/CreativeRusBear/node-chat)
+![GitHub issues](https://img.shields.io/github/issues/CreativeRusBear/node-chat)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/CreativeRusBear/node-chat)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/CreativeRusBear/node-chat)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/CreativeRusBear/node-chat)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/CreativeRusBear/node-chat)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fcreativerusbear.github.io%2Fnode-chat%2F)
 
 ## Introduction
 
@@ -16,7 +22,7 @@ This application is created using :bookmark_tabs: :
  * `JavaScript` - programming language;
  * `Node.js` - `JavaScript` runtime built. (An asynchronous event-driven `JavaScript` runtime, `Node.js` is designed to build scalable network applications);
  * `Express` - web-framework for work with `Node.js`'s applications;
- * `Soket.io` - library that enables real-time, bidirectional and event-based communication between the browser and the server.
+ * `Socket.io` - library that enables real-time, bidirectional and event-based communication between the browser and the server.
  
 ## Instructions :clipboard:
 
