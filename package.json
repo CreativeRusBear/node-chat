@@ -1,13 +1,19 @@
 {
   "name": "node-chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chat on Node.js, Express and Socket.io",
   "main": "chat.js",
   "scripts": {
-    "start": "nodemon chat.js"
+    "start": "node chat.js",
+    "dev": "nodemon chat.js"
   },
   "keywords": [
-    "Chat"
+    "Chat",
+    "Node.js",
+    "Express",
+    "Web sockets",
+    "JavaScript",
+    "ECMAScript"
   ],
   "author": "Artem Gusev <gusev2014russia@mail.ru> (CreativeRusBear)",
   "license": "MIT",
