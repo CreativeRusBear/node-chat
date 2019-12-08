@@ -1,5 +1,5 @@
 /**
- * @version v1.0.0
+ * @version v1.0.1
  * @file Chat, that working on Mode.js
  * @author Artem Gusev <gusev2014russia@mail.ru> (CreativeRusBear)
  * @copyright Artem Gusev 2019
